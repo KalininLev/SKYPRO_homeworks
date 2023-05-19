@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Montserrat:wght@300;400;600;700&family=Rosario:wght@700&display=swap');
+@import 'vars';
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: $colorTextWhite;
+    background-color: $colorDarkBlue;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+/*HEADER*/
+
+.header {
+    background-image: url(../img/header_back.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__main {
+        padding-top: 217px;
+
+        &-title {
+            font-weight: 700;
+            font-size: 64px;
+            line-height: 78px;
+        }
+
+        &-slogan {
+            padding-top: 32px;
+            width: 481px;
+
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 32px;
+        }
+
+        &-slogan span {
+            font-weight: 700;
+        }
+
+        &-btn {
+            margin-top: 44px;
+            margin-bottom: 493px;
+
+            width: 234px;
+            height: 48px;
+            font-family: 'Montserrat';
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            color: $colorTextWhite;
+            cursor: pointer;
+
+            background: $colorRed;
+            border-radius: 30px;
+            border: 1px solid $colorRed;
+            &:hover {
+                background: $colorOrange;
+            }
+        }
+    }
+}
+
+/*GAMES*/
+
+.content {
+    margin: 128px 0 128px 0;
+
+
+    display: flex;
+    justify-content: space-between;
+    column-gap: 32px;
+
+    &__box {
+        width: 378px;
+        height: 300px;
+        border-radius: 20px;
+        cursor: pointer;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        padding: 0 0 32px 32px;
+
+        &:hover {
+            outline: 2px solid $colorBlue;
+        }
+
+        &_1 {
+            background-image: url(../img/game_1st.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        &_2 {
+            background-image: url(../img/game_2nd.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        &_3 {
+            background-image: url(../img/game_3rd.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+    }
+}
