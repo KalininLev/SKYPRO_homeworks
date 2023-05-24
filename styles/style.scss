@@ -78,7 +78,8 @@ body {
 
     display: flex;
     justify-content: space-between;
-    column-gap: 32px;
+    gap: 32px;
+    flex-wrap: wrap;
 
     &__box {
         width: 378px;
@@ -124,3 +125,5 @@ body {
         line-height: 32px;
     }
 }
+
+@import 'mobile';
