@@ -1,0 +1,41 @@
+@media (max-width: 765px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .header {
+        &__main {
+            padding-top: 238px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &-title {
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 39px;
+
+                text-align: center;
+            }
+
+            &-slogan {
+                width: 343px;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 22px;
+
+                text-align: center;
+            }
+
+        }
+    }
+
+    .content {
+        &__box {
+            width: 343px;
+        }
+    }
+
+}

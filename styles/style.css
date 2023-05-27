@@ -65,8 +65,8 @@ body {
   margin: 128px 0 128px 0;
   display: flex;
   justify-content: space-between;
-  -moz-column-gap: 32px;
-       column-gap: 32px;
+  gap: 32px;
+  flex-wrap: wrap;
 }
 .content__box {
   width: 378px;
@@ -103,4 +103,33 @@ body {
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
+}
+
+@media (max-width: 765px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .header__main {
+    padding-top: 238px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header__main-title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+  }
+  .header__main-slogan {
+    width: 343px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+  }
+  .content__box {
+    width: 343px;
+  }
 }/*# sourceMappingURL=style.css.map */
