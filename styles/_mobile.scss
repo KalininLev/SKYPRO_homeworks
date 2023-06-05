@@ -1,4 +1,4 @@
-@media (max-width: 765px) {
+@media (max-width: 768px) {
     .center {
         padding-left: 16px;
         padding-right: 16px;
@@ -40,9 +40,18 @@
     }
 
     .games {
-        padding-top: 51px;
         display: flex;
         flex-wrap: wrap;
+
+        .game {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            width: 344px;
+            padding: 51px 0 51px 0;
+            gap: 64px;
+        }
 
         .game-1 {
             display: flex;
@@ -71,6 +80,40 @@
                 width: 344px;
             }
         }
+
+        .game-2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            order: 1;
+
+            &__title {
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 39px;
+
+                text-align: center;
+            }
+    
+            &__description {
+                width: 343px;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 22px;
+
+                text-align: center;
+            }
+    
+            &__img {
+                margin-top: 64px;
+                width: 344px;
+            }
+        }
+
+        .game-2__image {
+            order: 2;
+        }
+
     }
 
     

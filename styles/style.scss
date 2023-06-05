@@ -128,10 +128,17 @@ body {
 }
 
 .games {
-    padding: 233px 0 233px 0;
+
 
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+
+    .game {
+        display: flex;
+        gap: 135px;
+        padding: 233px 0 233px 0;
+    }
 
     .game-1{
 
@@ -175,6 +182,50 @@ body {
             width: 485px;
         }
     }
+
+    .game-2{
+
+        width: 584px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+
+        &__title {
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 59px;
+        }
+
+        &__description {
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 32px;
+        }
+
+        &__btn {
+            width: 234px;
+            height: 48px;
+            font-family: 'Montserrat';
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            color: $colorTextWhite;
+            cursor: pointer;
+
+            background: $colorRed;
+            border-radius: 30px;
+            border: 1px solid $colorRed;
+            &:hover {
+                background: $colorOrange;
+            }
+        }
+
+        &__img {
+            width: 485px;
+        }
+    }
+
 }
 
 @import 'mobile';
