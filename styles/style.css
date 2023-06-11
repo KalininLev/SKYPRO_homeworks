@@ -107,9 +107,14 @@ body {
 }
 
 .games {
-  padding: 233px 0 233px 0;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+.games .game {
+  display: flex;
+  gap: 135px;
+  padding: 233px 0 233px 0;
 }
 .games .game-1 {
   width: 584px;
@@ -146,8 +151,43 @@ body {
 .games .game-1__img {
   width: 485px;
 }
+.games .game-2 {
+  width: 584px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.games .game-2__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+}
+.games .game-2__description {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+}
+.games .game-2__btn {
+  width: 234px;
+  height: 48px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  cursor: pointer;
+  background: #9C0332;
+  border-radius: 30px;
+  border: 1px solid #9C0332;
+}
+.games .game-2__btn:hover {
+  background: #EB443F;
+}
+.games .game-2__img {
+  width: 485px;
+}
 
-@media (max-width: 765px) {
+@media (max-width: 768px) {
   .center {
     padding-left: 16px;
     padding-right: 16px;
@@ -176,9 +216,16 @@ body {
     width: 343px;
   }
   .games {
-    padding-top: 51px;
     display: flex;
     flex-wrap: wrap;
+  }
+  .games .game {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 344px;
+    padding: 51px 0 51px 0;
+    gap: 64px;
   }
   .games .game-1 {
     display: flex;
@@ -201,5 +248,31 @@ body {
   .games .game-1__img {
     margin-top: 64px;
     width: 344px;
+  }
+  .games .game-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    order: 1;
+  }
+  .games .game-2__title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+  }
+  .games .game-2__description {
+    width: 343px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+  }
+  .games .game-2__img {
+    margin-top: 64px;
+    width: 344px;
+  }
+  .games .game-2__image {
+    order: 2;
   }
 }/*# sourceMappingURL=style.css.map */
